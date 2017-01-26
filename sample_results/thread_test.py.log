@@ -1,0 +1,57 @@
+=== Thread with Normal Function Call ===
+[Lib] Internal Cpp instance initialized.
+[Lib] SampleClass instance initialized.
+[Py] Before starting thread.
+[Py] Thread started.
+[Py] Before calling library function.
+[Lib] Before sleeping.
+[Py] After starting thread.
+[Py] Waiting!
+[Py] Waiting!
+[Py] Waiting!
+[Py] Waiting!
+[Lib] After sleeping.
+[Py] After calling library function
+[Py] Waiting!
+[Py] Completed thread task.
+[Py] Result: 10
+[Py] Completed.
+=== Thread With External Function Call ===
+[Lib] Internal Cpp instance initialized.
+[Lib] SampleClass instance initialized.
+[Py] Before starting thread.
+[Py] Thread started.
+[Py] Before calling library function.
+[Py] After starting thread.
+[Lib] Before calling external function.
+[Cpp] Function Called.
+[Cpp] Before sleeping.
+[Cpp] After sleeping.
+[Lib] After calling external function.
+[Py] After calling library function
+[Py] Waiting!
+[Py] Completed thread task.
+[Py] Result: 10
+[Py] Completed.
+=== Thread With External Function Call (Thread friendly) ===
+[Lib] Internal Cpp instance initialized.
+[Lib] SampleClass instance initialized.
+[Py] Before starting thread.
+[Py] Thread started.
+[Py] Before calling library function.
+[Py] After starting thread.
+[Lib] Before calling external function.
+[Cpp] Function Called.
+[Cpp] Before sleeping.
+[Py] Waiting!
+[Py] Waiting!
+[Py] Waiting!
+[Py] Waiting!
+[Cpp] After sleeping.
+[Lib] After calling external function.
+[Py] After calling library function
+[Py] Waiting!
+[Py] Completed thread task.
+[Py] Result: 10
+[Py] Completed.
+
